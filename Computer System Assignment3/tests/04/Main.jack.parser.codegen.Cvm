@@ -1,0 +1,29 @@
+function Main.main 0
+label WHILE_EXP0
+push constant 0
+not
+not
+if-goto WHILE_END0
+label WHILE_EXP1
+push constant 0
+not
+if-goto WHILE_END1
+goto WHILE_EXP1
+label WHILE_END1
+goto WHILE_EXP0
+label WHILE_END0
+label WHILE_EXP2
+push constant 0
+not
+if-goto WHILE_END2
+label WHILE_EXP3
+push constant 0
+not
+not
+if-goto WHILE_END3
+goto WHILE_EXP3
+label WHILE_END3
+goto WHILE_EXP2
+label WHILE_END2
+push constant 0
+return

@@ -1,0 +1,12 @@
+class Main
+{
+	function void main()
+	{
+		if ( false )
+		{
+		} else
+		{
+		}
+		return ;
+	}
+}

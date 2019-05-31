@@ -1,0 +1,24 @@
+function Main.main 0
+push constant 0
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+label IF_FALSE0
+push constant 0
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+not
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+goto IF_END2
+label IF_FALSE2
+label IF_END2
+goto IF_END1
+label IF_FALSE1
+label IF_END1
+push constant 0
+return
