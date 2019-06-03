@@ -1,0 +1,21 @@
+class Main
+{
+    function void Main.main()
+    {
+        while (true)
+        {
+            while (false)
+            {
+            }
+        }
+
+        while (false)
+        {
+            while (true)
+            {
+            }
+        }
+
+        return ;
+    }
+}

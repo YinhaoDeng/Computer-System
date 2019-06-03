@@ -1,0 +1,10 @@
+class Main
+{
+    function void Main.main()
+    {
+        var int a ;
+        var int b ;
+
+        return ;
+    }
+}

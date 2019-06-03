@@ -1,0 +1,24 @@
+class Main
+{
+    static int aa ;
+    field int bb ;
+
+    constructor Main Main.newmain()
+    {
+        return this ;
+    }
+
+    method int Main.returnaa()
+    {
+        return aa ;
+    }
+
+    function void Main.main()
+    {
+        var Main mm ;
+
+        let mm = Main.newmain() ;
+        let aa = mm.returnaa() ;
+        return ;
+    }
+}

@@ -1,0 +1,32 @@
+<jn-class>
+    <class-name>Main</class-name>
+    <jn-var-decs>
+    </jn-var-decs>
+    <jn-subr-decs>
+        <jn-function>
+            <vtype>void</vtype>
+            <name>main</name>
+            <jn-param-list>
+            </jn-param-list>
+            <jn-subr-body>
+                <jn-var-decs>
+                </jn-var-decs>
+                <jn-statements>
+                    <jn-while>
+                        <jn-bool>
+                            <tf>true</tf>
+                        </jn-bool>
+                        <jn-statements>
+                            <jn-statements>
+                            </jn-statements>
+                        </jn-statements>
+                    </jn-while>
+                    <jn-statements>
+                    </jn-statements>
+                    <jn-return>
+                    </jn-return>
+                </jn-statements>
+            </jn-subr-body>
+        </jn-function>
+    </jn-subr-decs>
+</jn-class>

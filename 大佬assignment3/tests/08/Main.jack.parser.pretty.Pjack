@@ -1,0 +1,16 @@
+class Main
+{
+    static int aa ;
+    static int bb ;
+
+    function int Main.returnaa()
+    {
+        return aa ;
+    }
+
+    function void Main.main()
+    {
+        let bb = Main.returnaa() ;
+        return ;
+    }
+}

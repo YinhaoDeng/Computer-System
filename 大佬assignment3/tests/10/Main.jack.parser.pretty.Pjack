@@ -1,0 +1,38 @@
+class Main
+{
+    static int aa ;
+    static int s0 ;
+    static int s1 ;
+    static int s2 ;
+    static int s3 ;
+    static int s4 ;
+    field int bb ;
+    field int b0 ;
+    field int b1 ;
+    field int b2 ;
+
+    constructor Main Main.newmain()
+    {
+        return this ;
+    }
+
+    method int Main.returnbb(int b,int c)
+    {
+        return bb ;
+    }
+
+    method int Main.returnaa(int z)
+    {
+        return this.returnbb(z,z) ;
+    }
+
+    function void Main.main()
+    {
+        var Main mm ;
+        var int b ;
+
+        let mm = Main.newmain() ;
+        let b = mm.returnaa(42) ;
+        return ;
+    }
+}

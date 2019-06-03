@@ -1,0 +1,11 @@
+class Main
+{
+    static int aa ;
+    static int bb ;
+
+    function void Main.main()
+    {
+        let aa = bb + 7 ;
+        return ;
+    }
+}

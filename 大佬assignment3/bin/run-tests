@@ -1,0 +1,342 @@
+#!/bin/bash
+# runs selected commands over matching test files
+# it assumes tests are in the directory containing this script
+# it assumes that the executable is in the parent directory
+
+# outputs to check, one of parser or translator
+case $1 in
+working-jparser)
+	command1=bin/j-parser
+	command2=cat
+	outputs=parser.Pxml
+    regenerate="NO"
+	testing_message="Testing working jack_parser() against parser.Pxml files."
+	;;
+working-jcodegen)
+	command1=bin/j-parser
+	command2=bin/j-codegen
+	outputs=parser.codegen.Cvm
+    regenerate="NO"
+	testing_message="Testing working jack_codegen() against parser.codegen.Cvm files."
+	;;
+working-jpretty)
+	command1=bin/j-parser
+	command2=bin/j-pretty
+	outputs=parser.pretty.Pjack
+    regenerate="NO"
+	testing_message="Testing working jack_pretty() against parser.pretty.Pjack files."
+	;;
+working-jopt-r)
+	command1=bin/j-parser
+	command2=bin/j-opt-r
+	outputs=parser.opt-r.Pxml
+    regenerate="NO"
+	testing_message="Testing working jack_optimiser_r() against parser.opt-r.Pxml files."
+	;;
+new)
+	command1=cat
+	command2=cat
+	outputs=
+    regenerate="ALL"
+    testing_message="Regenerated all test output files."
+	;;
+add)
+	command1=cat
+	command2=cat
+	outputs=
+    regenerate="MISSING"
+    testing_message="Adding missing test output files."
+	;;
+jparser)
+	command1=jparser
+	command2=cat
+	outputs=parser.Pxml
+    regenerate="NO"
+	testing_message="Testing student jack_parser() against parser.Pxml files."
+	;;
+jcodegen)
+	command1=bin/j-parser
+	command2=jcodegen
+	outputs=parser.codegen.Cvm
+    regenerate="NO"
+	testing_message="Testing student jack_codegen() against parser.codegen.Cvm files."
+	;;
+jpretty)
+	command1=bin/j-parser
+	command2=jpretty
+	outputs=parser.pretty.Pjack
+    regenerate="NO"
+	testing_message="Testing student jack_pretty() against parser.pretty.Pjack files."
+	;;
+jopt-r)
+	command1=bin/j-parser
+	command2=jopt-r
+	outputs=parser.opt-r.Pxml
+    regenerate="NO"
+	testing_message="Testing student jack_optimiser_r() against parser.opt-r.Pxml files."
+	;;
+*)
+	echo "Unrecognised argument - no tests will be run."
+	exit -1 ;
+	;;
+esac
+
+# display messages or hide them
+case $2 in
+quiet)
+    loud="quiet"
+    ;;
+loud)
+    loud="loud"
+    ;;
+*)
+    loud="loud"
+    ;;
+esac
+
+# work out relative path to tests directory
+THISPWD=`pwd`
+
+# cd to the lib directory - where this script is
+LIBDIR=`dirname $0`
+cd "$LIBDIR"
+LIBPWD=`pwd`
+
+# find the parent directory name
+PARENTDIR=`dirname "${LIBPWD}"`
+
+# check we have a tests dir
+if [ ! -d "../tests" ] ; then
+    echo "Cannot find the tests directory"
+    exit -1
+fi
+
+# cd to the tests dir
+cd "../tests"
+TESTPWD=`pwd`
+
+# fix up pathnames to be displayed
+if [ "$THISPWD" == "$TESTPWD" ] ; then
+	TESTDIR=""
+	PARENTDIR="../"
+elif [ "$THISPWD" == "$LIBPWD" ] ; then
+    TESTDIR="../tests/"
+    PARENTDIR="../"
+elif [ "$THISPWD" == "$PARENTDIR" ] ; then
+	TESTDIR="tests/"
+	PARENTDIR="./"
+else
+    echo "Execute the following command first if you want to cut-paste the test commands:"
+    echo "cd ${PARENTDIR}"
+    echo
+    TESTDIR="tests/"
+    PARENTDIR="./"
+fi
+
+# check we have a command1 first
+if [ "${command1}" != "cat" ] ; then
+    if [ ! -x "../${command1}" ] ; then
+        echo "Cannot find executable ${PARENTDIR}${command1}"
+        exit -1
+    fi
+fi
+
+# check we have a command2 if not cat
+if [ "${command2}" != "cat" ] ; then
+	if [ ! -x "../${command2}" ] ; then
+		echo "Cannot find executable ${PARENTDIR}${command2}"
+		exit -1
+	fi
+fi
+
+### PRETTY STUFF ###
+
+# if using an xterm - use headings and colour coded test results
+if [ "${TERM:0:5}" == "xterm" -o "${TERM:0:2}" == "vt" ] ; then
+    colorboldblack="\x1b[1;7;30m"
+    colorboldgreen="\x1b[1;7;32m"
+    colorboldred="\x1b[1;7;31m"
+    undocolor="\x1b[0m"
+else
+    colorboldblack=
+    colorboldgreen=
+    colorboldred=
+    undocolor=
+fi
+
+# make a string of whitespace matching the longest string parameter
+padding=
+setpadding()
+{
+    padding=
+    while [ "${#@}" -gt 0 ] ; do
+        while [ "${#padding}" -lt "${#1}" ] ; do
+            padding="${padding} "
+        done
+        shift 1
+    done
+}
+
+# column1 - blank
+setpadding "Checking"
+col1="${padding}"
+
+# column2 - test input file
+setpadding "cat ${TESTDIR}ElSquare/SquareGame.jack "
+input_padding="${padding}"
+
+col2="          Test Input"
+col2="${col2}${input_padding:${#col2}}"
+
+# column3 - command1
+setpadding "${PARENTDIR}${command1}"
+command_padding1="${padding}"
+
+col3="  ${command1}"
+col3="${col3}${command_padding1:${#col3}}"
+
+# column4 - command2
+setpadding "${PARENTDIR}${command2}"
+command_padding2="${padding}"
+
+col4="  ${command2}"
+col4="${col4}${command_padding2:${#col4}}"
+
+# column 5 - test expected output file
+setpadding "diff - ${TESTDIR}tests/ElSquare/SquareGame.jack.parser.pretty.Pjack "
+output_padding="${padding}"
+
+col5="       Expected Test Output"
+col5="${col5}${output_padding:${#col5}}"
+
+# column 6 - test result
+setpadding " test passed " " test failed "
+result_padding="${padding}"
+col6=" Test Result"
+col6="${col6}${result_padding:${#col6}}"
+
+# nullglob is set so nothing runs if there are no test files
+shopt -s nullglob
+
+if [ "${command2}" == "cat" ] ; then
+    parent_dir_command2=
+    command2=cat
+    col4=
+else
+    parent_dir_command2="| ${PARENTDIR}${command2}"
+    command2="../${command2}"
+    col4="| ${col4} "
+fi
+
+banner="NO"
+header=
+columns=
+display_banner()
+{
+    if [ "${banner}" == "YES" ] ; then return ; fi
+
+    banner="YES"
+    if [ ${#testing_message} -gt 0 ] ; then echo "${testing_message}" ; fi
+    if [ ${#columns} -gt 0 ] ; then echo -e "${columns}" ; fi
+}
+
+if [ "${regenerate}" == "ALL" ] ; then
+    echo -e "${colorboldblack}                         | parser? | pretty? | codegen? | opt-r? ${undocolor}"
+    # search for .jack files and generate matching output files
+    for i in */*.jack ; do
+        printf -v source_file "%-24s" "${i}"
+
+        # remove old test output files
+        rm -f "${i}.parser."*
+
+        # attempt to parse the .jack file
+        cat ${i} | ../bin/j-parser > "${i}.parser.Pxml" 2> /dev/null
+
+        # if output was empty there must only be one test output file .jack.parser.Pxml
+        if [ ! -s "${i}.parser.Pxml" ] ; then
+            rm -f "${i}.parser.Pxml"
+            touch "${i}.parser.Pxml"
+            echo "${source_file} |   DNC   |   No    |    No    |   No   "
+        else
+            cat "${i}.parser.Pxml" | ../bin/j-copy > /dev/null
+            cat "${i}.parser.Pxml" | ../bin/j-codegen > "${i}.parser.codegen.Cvm"
+            cat "${i}.parser.Pxml" | ../bin/j-pretty > "${i}.parser.pretty.Pjack"
+            cat "${i}.parser.Pxml" | ../bin/j-opt-r > "${i}.parser.opt-r.Pxml"
+            if diff -q "${i}.parser.Pxml" "${i}.parser.opt-r.Pxml" > /dev/null 2> /dev/null ; then
+                rm -f "${i}.parser.opt-r.Pxml"
+            fi
+            echo "${source_file} |   Yes   |   Yes   |    Yes   |   Yes  "
+        fi
+    done
+    echo
+elif [ "${regenerate}" == "MISSING" ] ; then
+    # run working tokeniser generate missing output files
+    for i in */*.jack ; do
+        # ignore files that already have some outputs
+        if [ ! -f "${i}.parser.Pxml" ] ; then
+
+            # remove old test output files
+            rm -f "${i}.parser."*
+
+            # attempt to parse the .jack file
+            cat ${i} | ../bin/j-parser > "${i}.parser.Pxml" 2> /dev/null
+
+            # if output was empty there must only be one test output file .jack.parser.empty
+            if [ ! -s "${i}.parser.Pxml" ] ; then
+                rm -f "${i}.parser.Pxml"
+                touch "${i}.parser.Pxml"
+                echo "${source_file} |   DNC   |   No    |    No    |   No   "
+            else
+                cat "${i}.parser.Pxml" | ../bin/j-copy > /dev/null
+                cat "${i}.parser.Pxml" | ../bin/j-codegen > "${i}.parser.codegen.Cvm"
+                cat "${i}.parser.Pxml" | ../bin/j-pretty > "${i}.parser.pretty.Pjack"
+                cat "${i}.parser.Pxml" | ../bin/j-opt-r > "${i}.parser.opt-r.Pxml"
+                if diff -q "${i}.parser.Pxml" "${i}.parser.opt-r.Pxml" > /dev/null 2> /dev/null ; then
+                    rm -f "${i}.parser.opt-r.Pxml"
+                fi
+                echo "${source_file} |   Yes   |   Yes   |    Yes   |   Yes  "
+            fi
+        fi
+    done
+    echo
+else
+    # test command with all test files that have a matching output kind file
+    columns="${colorboldblack}${col1}| ${col2} | ${col3} ${col4}| ${col5}  | ${col6}${undocolor}"
+    for i in */*.${outputs} ; do
+        input="${i%%.${outputs}}"
+        if [ -f "${input}" ] ; then
+            display_input="cat ${TESTDIR}${input}"
+            display_input="${display_input}${input_padding:${#display_input}}"
+
+            display_output="diff - ${TESTDIR}${i}"
+            display_output="${display_output}${output_padding:${#display_output}}"
+
+            testmessage="Checking \"${display_input} | ${PARENTDIR}${command1} ${parent_dir_command2} | ${display_output}\" - "
+
+            if [ ${command2} == "cat" ] ; then
+                if "../${command1}" ${args} < ${input} 2>&1 | diff -q - ${i} > /dev/null 2> /dev/null ; then
+                    if [ "${loud}" != "quiet" ] ; then
+                        display_banner
+                        echo -e "${testmessage} ${colorboldgreen}test passed${undocolor}" ;
+                    fi
+                else
+                    display_banner
+                    echo -e "${testmessage} ${colorboldred}test failed${undocolor}"
+                fi
+            else
+                if "../${command1}" ${args} < ${input} 2>&1 | "${command2}" 2>&1 | diff -q - ${i} > /dev/null 2> /dev/null ; then
+                    if [ "${loud}" != "quiet" ] ; then
+                        display_banner
+                        echo -e "${testmessage} ${colorboldgreen}test passed${undocolor}" ;
+                    fi
+                else
+                    display_banner
+                    echo -e "${testmessage} ${colorboldred}test failed${undocolor}"
+                fi
+            fi
+        fi
+    done
+    echo
+fi
+
+

@@ -1,0 +1,64 @@
+class Main
+{
+    function void Main.main()
+    {
+        var Array a ;
+        var Array b ;
+        var Array c ;
+
+        let a = Array.new(10) ;
+        let b = Array.new(5) ;
+        let c = Array.new(1) ;
+        let a[3] = 2 ;
+        let a[4] = 8 ;
+        let a[5] = 4 ;
+        let b[a[3]] = a[3] + 3 ;
+        let a[b[a[3]]] = a[a[5]] * b[7 - a[3] - Main.double(2) + 1] ;
+        let c[0] = null ;
+        let c = c[0] ;
+        do Output.printString("Test 1 - Required result: 5, Actual result: ") ;
+        do Output.printInt(b[2]) ;
+        do Output.println() ;
+        do Output.printString("Test 2 - Required result: 40, Actual result: ") ;
+        do Output.printInt(a[5]) ;
+        do Output.println() ;
+        do Output.printString("Test 3 - Required result: 0, Actual result: ") ;
+        do Output.printInt(c) ;
+        do Output.println() ;
+        let c = null ;
+        if (c = null)
+        {
+            do Main.fill(a,10) ;
+            let c = a[3] ;
+            let c[1] = 33 ;
+            let c = a[7] ;
+            let c[1] = 77 ;
+            let b = a[3] ;
+            let b[1] = b[1] + c[1] ;
+        }
+
+        do Output.printString("Test 4 - Required result: 77, Actual result: ") ;
+        do Output.printInt(c[1]) ;
+        do Output.println() ;
+        do Output.printString("Test 5 - Required result: 110, Actual result: ") ;
+        do Output.printInt(b[1]) ;
+        do Output.println() ;
+        return ;
+    }
+
+    function int Main.double(int a)
+    {
+        return a * 2 ;
+    }
+
+    function void Main.fill(Array a,int size)
+    {
+        while (size > 0)
+        {
+            let size = size - 1 ;
+            let a[size] = Array.new(3) ;
+        }
+
+        return ;
+    }
+}

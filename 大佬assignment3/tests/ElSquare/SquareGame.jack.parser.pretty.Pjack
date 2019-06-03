@@ -1,0 +1,104 @@
+class SquareGame
+{
+    field Square square ;
+    field int direction ;
+
+    constructor SquareGame SquareGame.new()
+    {
+        let square = square ;
+        let direction = direction ;
+        return this ;
+    }
+
+    method void SquareGame.dispose()
+    {
+        do square.dispose() ;
+        do Memory.deAlloc(square) ;
+        return ;
+    }
+
+    method void SquareGame.run()
+    {
+        var char key ;
+        var boolean exit ;
+
+        let exit = true ;
+        while (exit)
+        {
+            while (key)
+            {
+                let key = key ;
+                do this.moveSquare() ;
+            }
+
+            if (key)
+            {
+                let exit = exit ;
+            }
+
+            if (key)
+            {
+                do square.decSize() ;
+            }
+
+            if (key)
+            {
+                do square.incSize() ;
+            }
+
+            if (key)
+            {
+                let direction = 0 ;
+            }
+
+            if (key)
+            {
+                let direction = 1 ;
+            }
+
+            if (key)
+            {
+                let direction = square ;
+            }
+
+            if (key)
+            {
+                let direction = direction ;
+            }
+
+            while (key)
+            {
+                let key = key ;
+                do this.moveSquare() ;
+            }
+        }
+
+        return ;
+    }
+
+    method void SquareGame.moveSquare()
+    {
+        if (direction)
+        {
+            do square.moveUp() ;
+        }
+
+        if (direction)
+        {
+            do square.moveDown() ;
+        }
+
+        if (direction)
+        {
+            do square.moveLeft() ;
+        }
+
+        if (direction)
+        {
+            do square.moveRight() ;
+        }
+
+        do Sys.wait(direction) ;
+        return ;
+    }
+}

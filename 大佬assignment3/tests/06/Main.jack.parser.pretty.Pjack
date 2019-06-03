@@ -1,0 +1,24 @@
+class Main
+{
+    function void Main.main()
+    {
+        if (true)
+        {
+        }
+
+        if (false)
+        {
+            if (true)
+            {
+            }
+            else
+            {
+            }
+        }
+        else
+        {
+        }
+
+        return ;
+    }
+}

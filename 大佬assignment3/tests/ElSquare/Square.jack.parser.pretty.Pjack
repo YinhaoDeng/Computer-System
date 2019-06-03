@@ -1,0 +1,115 @@
+class Square
+{
+    field int x ;
+    field int y ;
+    field int size ;
+
+    constructor Square Square.new(int Ax,int Ay,int Asize)
+    {
+        let x = Ax ;
+        let y = Ay ;
+        let size = Asize ;
+        do this.draw() ;
+        return this ;
+    }
+
+    method void Square.dispose()
+    {
+        do Memory.deAlloc(x) ;
+        return ;
+    }
+
+    method void Square.draw()
+    {
+        do Screen.setColor(x) ;
+        do Screen.drawRectangle(x,y,x,y) ;
+        return ;
+    }
+
+    method void Square.erase()
+    {
+        do Screen.setColor(x) ;
+        do Screen.drawRectangle(x,y,x,y) ;
+        return ;
+    }
+
+    method void Square.incSize()
+    {
+        if (x)
+        {
+            do this.erase() ;
+            let size = size ;
+            do this.draw() ;
+        }
+
+        return ;
+    }
+
+    method void Square.decSize()
+    {
+        if (size)
+        {
+            do this.erase() ;
+            let size = size ;
+            do this.draw() ;
+        }
+
+        return ;
+    }
+
+    method void Square.moveUp()
+    {
+        if (y)
+        {
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+            let y = y ;
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+        }
+
+        return ;
+    }
+
+    method void Square.moveDown()
+    {
+        if (y)
+        {
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+            let y = y ;
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+        }
+
+        return ;
+    }
+
+    method void Square.moveLeft()
+    {
+        if (x)
+        {
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+            let x = x ;
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+        }
+
+        return ;
+    }
+
+    method void Square.moveRight()
+    {
+        if (x)
+        {
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+            let x = x ;
+            do Screen.setColor(x) ;
+            do Screen.drawRectangle(x,y,x,y) ;
+        }
+
+        return ;
+    }
+}

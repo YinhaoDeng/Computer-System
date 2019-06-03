@@ -1,0 +1,14 @@
+class Main
+{
+    function void Main.main()
+    {
+        if (false)
+        {
+        }
+        else
+        {
+        }
+
+        return ;
+    }
+}

@@ -1,0 +1,30 @@
+function Main.newmain 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+push pointer 0
+return
+function Main.returnbb 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function Main.returnaa 0
+push argument 0
+pop pointer 0
+push pointer 0
+push argument 1
+push argument 1
+call Main.returnbb 3
+return
+function Main.main 2
+call Main.newmain 0
+pop local 0
+push constant 0
+return
+push local 0
+push constant 42
+call Main.returnaa 2
+pop local 1
+push constant 0
+return
