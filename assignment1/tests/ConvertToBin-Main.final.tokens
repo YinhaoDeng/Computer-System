@@ -1,0 +1,25 @@
+{kind: class, spelling: "class", line: 21, column: 1}
+{kind: identifier, spelling: "Main", line: 21, column: 7}
+{kind: {, spelling: "{", line: 21, column: 12}
+{kind: identifier, spelling: "function", line: 27, column: 5}
+{kind: identifier, spelling: "void", line: 27, column: 14}
+{kind: identifier, spelling: "main", line: 27, column: 19}
+{kind: (, spelling: "(", line: 27, column: 23}
+{kind: ), spelling: ")", line: 27, column: 24}
+{kind: {, spelling: "{", line: 27, column: 26}
+{kind: identifier, spelling: "var", line: 28, column: 9}
+{kind: int, spelling: "int", line: 28, column: 13}
+{kind: identifier, spelling: "result", line: 28, column: 17}
+{kind: ,, spelling: ",", line: 28, column: 23}
+{kind: identifier, spelling: "value", line: 28, column: 25}
+{kind: ;, spelling: ";", line: 28, column: 30}
+{kind: identifier, spelling: "do", line: 30, column: 9}
+{kind: identifier, spelling: "Main", line: 30, column: 12}
+{kind: ., spelling: ".", line: 30, column: 16}
+{kind: identifier, spelling: "fillMemory", line: 30, column: 17}
+{kind: (, spelling: "(", line: 30, column: 27}
+{kind: integer, spelling: "8001", line: 30, column: 28}
+{kind: ,, spelling: ",", line: 30, column: 32}
+{kind: integer, spelling: "16", line: 30, column: 34}
+{kind: ,, spelling: ",", line: 30, column: 36}
+read 24 tokens

@@ -1,0 +1,19 @@
+function Main.newmain 0
+push constant 1
+call Memory.alloc 1
+pop pointer 0
+push pointer 0
+return
+function Main.returnaa 0
+push argument 0
+pop pointer 0
+push static 0
+return
+function Main.main 1
+call Main.newmain 0
+pop local 0
+push local 0
+call Main.returnaa 1
+pop static 0
+push constant 0
+return

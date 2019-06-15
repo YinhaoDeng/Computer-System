@@ -1,0 +1,26 @@
+{kind: class, spelling: "class", line: 7, column: 1}
+{kind: identifier, spelling: "Main", line: 7, column: 7}
+{kind: {, spelling: "{", line: 7, column: 12}
+{kind: identifier, spelling: "function", line: 8, column: 5}
+{kind: identifier, spelling: "void", line: 8, column: 14}
+{kind: identifier, spelling: "main", line: 8, column: 19}
+{kind: (, spelling: "(", line: 8, column: 23}
+{kind: ), spelling: ")", line: 8, column: 24}
+{kind: {, spelling: "{", line: 8, column: 26}
+{kind: identifier, spelling: "var", line: 9, column: 9}
+{kind: identifier, spelling: "Array", line: 9, column: 13}
+{kind: identifier, spelling: "a", line: 9, column: 19}
+{kind: ;, spelling: ";", line: 9, column: 20}
+{kind: identifier, spelling: "var", line: 10, column: 9}
+{kind: int, spelling: "int", line: 10, column: 13}
+{kind: identifier, spelling: "length", line: 10, column: 17}
+{kind: ;, spelling: ";", line: 10, column: 23}
+{kind: identifier, spelling: "var", line: 11, column: 9}
+{kind: int, spelling: "int", line: 11, column: 13}
+{kind: identifier, spelling: "i", line: 11, column: 17}
+{kind: ,, spelling: ",", line: 11, column: 18}
+{kind: identifier, spelling: "sum", line: 11, column: 20}
+{kind: ;, spelling: ";", line: 11, column: 23}
+{kind: identifier, spelling: "let", line: 13, column: 9}
+{kind: identifier, spelling: "length", line: 13, column: 13}
+read 25 tokens

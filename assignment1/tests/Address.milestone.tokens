@@ -1,0 +1,5 @@
+{kind: @, spelling: "@", line: 1, column: 9}
+{kind: identifier, spelling: "hello_mum", line: 1, column: 10}
+{kind: :, spelling: ":", line: 1, column: 19}
+{kind: integer, spelling: "17", line: 1, column: 20}
+read 4 tokens

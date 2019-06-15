@@ -1,0 +1,26 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/12/StringTest/Main.jack", line: 4, column: 1}
+{kind: adhoc_comment, spelling: "* Test program for the OS String class. ", line: 6, column: 1}
+{kind: class, spelling: "class", line: 7, column: 1}
+{kind: identifier, spelling: "Main", line: 7, column: 7}
+{kind: {, spelling: "{", line: 7, column: 12}
+{kind: adhoc_comment, spelling: "* Performs several string manipulations and prints their results. ", line: 9, column: 5}
+{kind: identifier, spelling: "function", line: 10, column: 5}
+{kind: identifier, spelling: "void", line: 10, column: 14}
+{kind: identifier, spelling: "main", line: 10, column: 19}
+{kind: (, spelling: "(", line: 10, column: 23}
+{kind: ), spelling: ")", line: 10, column: 24}
+{kind: {, spelling: "{", line: 10, column: 26}
+{kind: identifier, spelling: "var", line: 11, column: 9}
+{kind: identifier, spelling: "String", line: 11, column: 13}
+{kind: identifier, spelling: "s", line: 11, column: 20}
+{kind: ;, spelling: ";", line: 11, column: 21}
+{kind: identifier, spelling: "var", line: 12, column: 9}
+{kind: identifier, spelling: "String", line: 12, column: 13}
+{kind: identifier, spelling: "i", line: 12, column: 20}
+{kind: ;, spelling: ";", line: 12, column: 21}
+{kind: identifier, spelling: "let", line: 14, column: 9}
+{kind: identifier, spelling: "s", line: 14, column: 13}
+read 25 tokens

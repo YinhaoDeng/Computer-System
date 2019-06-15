@@ -1,0 +1,10 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/06/rect/Rect.asm", line: 4, column: 1}
+{kind: eol_comment, spelling: " Draws a rectangle at the top-left corner of the screen.", line: 6, column: 1}
+{kind: eol_comment, spelling: " The rectangle is 16 pixels wide and R0 pixels high.", line: 7, column: 1}
+{kind: @, spelling: "@", line: 9, column: 4}
+{kind: integer, spelling: "0", line: 9, column: 5}
+{kind: identifier, spelling: "D", line: 10, column: 4}
+read 9 tokens

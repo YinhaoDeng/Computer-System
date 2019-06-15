@@ -1,0 +1,10 @@
+{kind: integer, spelling: "0", line: 1, column: 2}
+{kind: double, spelling: "4.3", line: 1, column: 4}
+{kind: double, spelling: "3.6e-89", line: 1, column: 8}
+{kind: double, spelling: "12125.34e+9", line: 1, column: 16}
+{kind: double, spelling: "888e+0", line: 1, column: 27}
+{kind: integer, spelling: "34", line: 1, column: 33}
+{kind: integer, spelling: "0", line: 1, column: 36}
+{kind: integer, spelling: "0", line: 1, column: 37}
+{kind: double, spelling: "0.000000e-00008", line: 1, column: 38}
+read 9 tokens

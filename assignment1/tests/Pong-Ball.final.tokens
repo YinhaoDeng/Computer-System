@@ -1,0 +1,87 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/11/Pong/Ball.jack", line: 4, column: 1}
+{kind: adhoc_comment, spelling: "*
+ * A graphic ball. Has a screen location and distance of last destination.
+ * Has methods for drawing, erasing and moving on the screen.
+ * The ball's dimensions are 6X6 pixels.
+ ", line: 6, column: 1}
+{kind: class, spelling: "class", line: 11, column: 1}
+{kind: identifier, spelling: "Ball", line: 11, column: 7}
+{kind: {, spelling: "{", line: 11, column: 12}
+{kind: eol_comment, spelling: " The ball's screen location (in pixels)", line: 13, column: 5}
+{kind: identifier, spelling: "field", line: 14, column: 5}
+{kind: int, spelling: "int", line: 14, column: 11}
+{kind: identifier, spelling: "x", line: 14, column: 15}
+{kind: ,, spelling: ",", line: 14, column: 16}
+{kind: identifier, spelling: "y", line: 14, column: 18}
+{kind: ;, spelling: ";", line: 14, column: 19}
+{kind: eol_comment, spelling: " Distance of last destination", line: 16, column: 5}
+{kind: identifier, spelling: "field", line: 17, column: 5}
+{kind: int, spelling: "int", line: 17, column: 11}
+{kind: identifier, spelling: "lengthx", line: 17, column: 15}
+{kind: ,, spelling: ",", line: 17, column: 22}
+{kind: identifier, spelling: "lengthy", line: 17, column: 24}
+{kind: ;, spelling: ";", line: 17, column: 31}
+{kind: eol_comment, spelling: " Used for straight line movement computation", line: 19, column: 5}
+{kind: identifier, spelling: "field", line: 20, column: 5}
+{kind: int, spelling: "int", line: 20, column: 11}
+{kind: identifier, spelling: "d", line: 20, column: 15}
+{kind: ,, spelling: ",", line: 20, column: 16}
+{kind: identifier, spelling: "straightD", line: 20, column: 18}
+{kind: ,, spelling: ",", line: 20, column: 27}
+{kind: identifier, spelling: "diagonalD", line: 20, column: 29}
+{kind: ;, spelling: ";", line: 20, column: 38}
+{kind: identifier, spelling: "field", line: 21, column: 5}
+{kind: identifier, spelling: "boolean", line: 21, column: 11}
+{kind: identifier, spelling: "invert", line: 21, column: 19}
+{kind: ,, spelling: ",", line: 21, column: 25}
+{kind: identifier, spelling: "positivex", line: 21, column: 27}
+{kind: ,, spelling: ",", line: 21, column: 36}
+{kind: identifier, spelling: "positivey", line: 21, column: 38}
+{kind: ;, spelling: ";", line: 21, column: 47}
+{kind: eol_comment, spelling: " wall locations", line: 23, column: 5}
+{kind: identifier, spelling: "field", line: 24, column: 5}
+{kind: int, spelling: "int", line: 24, column: 11}
+{kind: identifier, spelling: "leftWall", line: 24, column: 15}
+{kind: ,, spelling: ",", line: 24, column: 23}
+{kind: identifier, spelling: "rightWall", line: 24, column: 25}
+{kind: ,, spelling: ",", line: 24, column: 34}
+{kind: identifier, spelling: "topWall", line: 24, column: 36}
+{kind: ,, spelling: ",", line: 24, column: 43}
+{kind: identifier, spelling: "bottomWall", line: 24, column: 45}
+{kind: ;, spelling: ";", line: 24, column: 55}
+{kind: eol_comment, spelling: " last wall that the ball was bounced from", line: 26, column: 5}
+{kind: identifier, spelling: "field", line: 27, column: 5}
+{kind: int, spelling: "int", line: 27, column: 11}
+{kind: identifier, spelling: "wall", line: 27, column: 15}
+{kind: ;, spelling: ";", line: 27, column: 19}
+{kind: adhoc_comment, spelling: "* Constructs a new Ball with a given initial location
+     *  and the locations of the walls. ", line: 29, column: 5}
+{kind: identifier, spelling: "constructor", line: 31, column: 5}
+{kind: identifier, spelling: "Ball", line: 31, column: 17}
+{kind: identifier, spelling: "new", line: 31, column: 22}
+{kind: (, spelling: "(", line: 31, column: 25}
+{kind: int, spelling: "int", line: 31, column: 26}
+{kind: identifier, spelling: "Ax", line: 31, column: 30}
+{kind: ,, spelling: ",", line: 31, column: 32}
+{kind: int, spelling: "int", line: 31, column: 34}
+{kind: identifier, spelling: "Ay", line: 31, column: 38}
+{kind: ,, spelling: ",", line: 31, column: 40}
+{kind: int, spelling: "int", line: 31, column: 42}
+{kind: identifier, spelling: "AleftWall", line: 31, column: 46}
+{kind: ,, spelling: ",", line: 31, column: 55}
+{kind: int, spelling: "int", line: 31, column: 57}
+{kind: identifier, spelling: "ArightWall", line: 31, column: 61}
+{kind: ,, spelling: ",", line: 31, column: 71}
+{kind: int, spelling: "int", line: 31, column: 73}
+{kind: identifier, spelling: "AtopWall", line: 31, column: 77}
+{kind: ,, spelling: ",", line: 31, column: 85}
+{kind: int, spelling: "int", line: 31, column: 87}
+{kind: identifier, spelling: "AbottomWall", line: 31, column: 91}
+{kind: ), spelling: ")", line: 31, column: 102}
+{kind: {, spelling: "{", line: 31, column: 104}
+{kind: identifier, spelling: "let", line: 32, column: 9}
+{kind: identifier, spelling: "x", line: 32, column: 13}
+read 81 tokens

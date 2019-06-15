@@ -1,0 +1,41 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/12/MemoryTest/Main.jack", line: 4, column: 1}
+{kind: adhoc_comment, spelling: "* Test program for the OS Memory class. ", line: 6, column: 1}
+{kind: class, spelling: "class", line: 7, column: 1}
+{kind: identifier, spelling: "Main", line: 7, column: 7}
+{kind: {, spelling: "{", line: 7, column: 12}
+{kind: adhoc_comment, spelling: "* Performs several memory manipulations. ", line: 9, column: 5}
+{kind: identifier, spelling: "function", line: 10, column: 5}
+{kind: identifier, spelling: "void", line: 10, column: 14}
+{kind: identifier, spelling: "main", line: 10, column: 19}
+{kind: (, spelling: "(", line: 10, column: 23}
+{kind: ), spelling: ")", line: 10, column: 24}
+{kind: {, spelling: "{", line: 10, column: 26}
+{kind: identifier, spelling: "var", line: 11, column: 9}
+{kind: int, spelling: "int", line: 11, column: 13}
+{kind: identifier, spelling: "temp", line: 11, column: 17}
+{kind: ;, spelling: ";", line: 11, column: 21}
+{kind: identifier, spelling: "var", line: 12, column: 9}
+{kind: identifier, spelling: "Array", line: 12, column: 13}
+{kind: identifier, spelling: "a", line: 12, column: 19}
+{kind: ,, spelling: ",", line: 12, column: 20}
+{kind: identifier, spelling: "b", line: 12, column: 22}
+{kind: ,, spelling: ",", line: 12, column: 23}
+{kind: identifier, spelling: "c", line: 12, column: 25}
+{kind: ;, spelling: ";", line: 12, column: 26}
+{kind: identifier, spelling: "do", line: 14, column: 9}
+{kind: identifier, spelling: "Memory", line: 14, column: 12}
+{kind: ., spelling: ".", line: 14, column: 18}
+{kind: identifier, spelling: "poke", line: 14, column: 19}
+{kind: (, spelling: "(", line: 14, column: 23}
+{kind: integer, spelling: "8000", line: 14, column: 24}
+{kind: ,, spelling: ",", line: 14, column: 28}
+{kind: integer, spelling: "333", line: 14, column: 30}
+{kind: ), spelling: ")", line: 14, column: 33}
+{kind: ;, spelling: ";", line: 14, column: 34}
+{kind: eol_comment, spelling: " RAM[8000] = 333", line: 14, column: 42}
+{kind: identifier, spelling: "let", line: 15, column: 9}
+{kind: identifier, spelling: "temp", line: 15, column: 13}
+read 40 tokens

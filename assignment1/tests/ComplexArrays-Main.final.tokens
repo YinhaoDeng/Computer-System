@@ -1,0 +1,20 @@
+{kind: class, spelling: "class", line: 11, column: 1}
+{kind: identifier, spelling: "Main", line: 11, column: 7}
+{kind: {, spelling: "{", line: 11, column: 12}
+{kind: identifier, spelling: "function", line: 13, column: 5}
+{kind: identifier, spelling: "void", line: 13, column: 14}
+{kind: identifier, spelling: "main", line: 13, column: 19}
+{kind: (, spelling: "(", line: 13, column: 23}
+{kind: ), spelling: ")", line: 13, column: 24}
+{kind: {, spelling: "{", line: 13, column: 26}
+{kind: identifier, spelling: "var", line: 14, column: 9}
+{kind: identifier, spelling: "Array", line: 14, column: 13}
+{kind: identifier, spelling: "a", line: 14, column: 19}
+{kind: ,, spelling: ",", line: 14, column: 20}
+{kind: identifier, spelling: "b", line: 14, column: 22}
+{kind: ,, spelling: ",", line: 14, column: 23}
+{kind: identifier, spelling: "c", line: 14, column: 25}
+{kind: ;, spelling: ";", line: 14, column: 26}
+{kind: identifier, spelling: "let", line: 16, column: 9}
+{kind: identifier, spelling: "a", line: 16, column: 13}
+read 19 tokens

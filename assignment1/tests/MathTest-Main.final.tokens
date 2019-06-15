@@ -1,0 +1,23 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/12/MathTest/Main.jack", line: 4, column: 1}
+{kind: adhoc_comment, spelling: "* Test program for the OS Math class. ", line: 6, column: 1}
+{kind: class, spelling: "class", line: 7, column: 1}
+{kind: identifier, spelling: "Main", line: 7, column: 7}
+{kind: {, spelling: "{", line: 7, column: 12}
+{kind: adhoc_comment, spelling: "* Performs several mathematical operations from the Math class. ", line: 9, column: 5}
+{kind: identifier, spelling: "function", line: 10, column: 5}
+{kind: identifier, spelling: "void", line: 10, column: 14}
+{kind: identifier, spelling: "main", line: 10, column: 19}
+{kind: (, spelling: "(", line: 10, column: 23}
+{kind: ), spelling: ")", line: 10, column: 24}
+{kind: {, spelling: "{", line: 10, column: 26}
+{kind: identifier, spelling: "var", line: 11, column: 9}
+{kind: identifier, spelling: "Array", line: 11, column: 13}
+{kind: identifier, spelling: "r", line: 11, column: 19}
+{kind: ;, spelling: ";", line: 11, column: 20}
+{kind: eol_comment, spelling: " stores test results;", line: 11, column: 31}
+{kind: identifier, spelling: "let", line: 13, column: 9}
+{kind: identifier, spelling: "r", line: 13, column: 13}
+read 22 tokens

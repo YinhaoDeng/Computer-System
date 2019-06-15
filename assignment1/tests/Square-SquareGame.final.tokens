@@ -1,0 +1,37 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/09/Square/SquareGame.jack", line: 4, column: 1}
+{kind: adhoc_comment, spelling: "*
+ * Implements the Square Dance game.
+ * In this game you can move a black square around the screen and
+ * change its size during the movement.
+ * In the beginning, the square is located at the top-left corner
+ * of the screen. The arrow keys are used to move the square.
+ * The 'z' & 'x' keys are used to decrement and increment the size.
+ * The 'q' key is used to quit the game.
+ ", line: 6, column: 1}
+{kind: class, spelling: "class", line: 15, column: 1}
+{kind: identifier, spelling: "SquareGame", line: 15, column: 7}
+{kind: {, spelling: "{", line: 15, column: 18}
+{kind: eol_comment, spelling: " The square", line: 17, column: 5}
+{kind: identifier, spelling: "field", line: 18, column: 5}
+{kind: identifier, spelling: "Square", line: 18, column: 11}
+{kind: identifier, spelling: "square", line: 18, column: 18}
+{kind: ;, spelling: ";", line: 18, column: 24}
+{kind: eol_comment, spelling: " The square's movement direction", line: 20, column: 5}
+{kind: identifier, spelling: "field", line: 21, column: 5}
+{kind: int, spelling: "int", line: 21, column: 11}
+{kind: identifier, spelling: "direction", line: 21, column: 15}
+{kind: ;, spelling: ";", line: 21, column: 24}
+{kind: eol_comment, spelling: " 0=none,1=up,2=down,3=left,4=right", line: 21, column: 26}
+{kind: adhoc_comment, spelling: "* Constructs a new Square Game. ", line: 23, column: 5}
+{kind: identifier, spelling: "constructor", line: 24, column: 5}
+{kind: identifier, spelling: "SquareGame", line: 24, column: 17}
+{kind: identifier, spelling: "new", line: 24, column: 28}
+{kind: (, spelling: "(", line: 24, column: 31}
+{kind: ), spelling: ")", line: 24, column: 32}
+{kind: {, spelling: "{", line: 24, column: 34}
+{kind: identifier, spelling: "let", line: 25, column: 9}
+{kind: identifier, spelling: "square", line: 25, column: 13}
+read 28 tokens

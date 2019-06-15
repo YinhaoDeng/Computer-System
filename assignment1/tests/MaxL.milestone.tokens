@@ -1,0 +1,4 @@
+{kind: @, spelling: "@", line: 2, column: 1}
+{kind: integer, spelling: "0", line: 2, column: 2}
+{kind: identifier, spelling: "D", line: 3, column: 1}
+read 3 tokens

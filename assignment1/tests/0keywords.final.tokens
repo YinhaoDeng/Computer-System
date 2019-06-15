@@ -1,0 +1,8 @@
+{kind: class, spelling: "class", line: 1, column: 3}
+{kind: if, spelling: "if", line: 3, column: 1}
+{kind: while, spelling: "while", line: 3, column: 6}
+{kind: identifier, spelling: "string", line: 4, column: 17}
+{kind: else, spelling: "else", line: 5, column: 1}
+{kind: int, spelling: "int", line: 5, column: 6}
+{kind: else, spelling: "else", line: 5, column: 10}
+read 7 tokens

@@ -1,0 +1,19 @@
+{kind: {, spelling: "{", line: 1, column: 2}
+{kind: }, spelling: "}", line: 2, column: 2}
+{kind: ., spelling: ".", line: 2, column: 3}
+{kind: ., spelling: ".", line: 2, column: 4}
+{kind: (, spelling: "(", line: 3, column: 2}
+{kind: ), spelling: ")", line: 3, column: 4}
+{kind: ), spelling: ")", line: 3, column: 6}
+{kind: !, spelling: "!", line: 3, column: 7}
+{kind: [, spelling: "[", line: 3, column: 8}
+{kind: ), spelling: ")", line: 3, column: 9}
+{kind: ;, spelling: ";", line: 3, column: 11}
+{kind: ,, spelling: ",", line: 4, column: 1}
+{kind: ], spelling: "]", line: 4, column: 2}
+{kind: :, spelling: ":", line: 4, column: 3}
+{kind: :, spelling: ":", line: 4, column: 4}
+{kind: @, spelling: "@", line: 5, column: 1}
+{kind: ., spelling: ".", line: 5, column: 3}
+{kind: @, spelling: "@", line: 5, column: 4}
+read 18 tokens

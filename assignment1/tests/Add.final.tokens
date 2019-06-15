@@ -1,0 +1,9 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/06/add/Add.asm", line: 4, column: 1}
+{kind: eol_comment, spelling: " Computes R0 = 2 + 3", line: 6, column: 1}
+{kind: @, spelling: "@", line: 8, column: 1}
+{kind: integer, spelling: "2", line: 8, column: 2}
+{kind: identifier, spelling: "D", line: 9, column: 1}
+read 8 tokens

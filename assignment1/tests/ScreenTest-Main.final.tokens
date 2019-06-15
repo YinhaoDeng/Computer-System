@@ -1,0 +1,264 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/12/ScreenTest/Main.jack", line: 4, column: 1}
+{kind: adhoc_comment, spelling: "* Test program for the OS Screen class. ", line: 6, column: 1}
+{kind: class, spelling: "class", line: 7, column: 1}
+{kind: identifier, spelling: "Main", line: 7, column: 7}
+{kind: {, spelling: "{", line: 7, column: 12}
+{kind: adhoc_comment, spelling: "* Draws a sample pictue on the screen using lines and circles. ", line: 9, column: 5}
+{kind: identifier, spelling: "function", line: 10, column: 5}
+{kind: identifier, spelling: "void", line: 10, column: 14}
+{kind: identifier, spelling: "main", line: 10, column: 19}
+{kind: (, spelling: "(", line: 10, column: 23}
+{kind: ), spelling: ")", line: 10, column: 24}
+{kind: {, spelling: "{", line: 10, column: 26}
+{kind: identifier, spelling: "do", line: 12, column: 9}
+{kind: identifier, spelling: "Screen", line: 12, column: 12}
+{kind: ., spelling: ".", line: 12, column: 18}
+{kind: identifier, spelling: "drawLine", line: 12, column: 19}
+{kind: (, spelling: "(", line: 12, column: 27}
+{kind: integer, spelling: "0", line: 12, column: 28}
+{kind: ,, spelling: ",", line: 12, column: 29}
+{kind: integer, spelling: "220", line: 12, column: 30}
+{kind: ,, spelling: ",", line: 12, column: 33}
+{kind: integer, spelling: "511", line: 12, column: 34}
+{kind: ,, spelling: ",", line: 12, column: 37}
+{kind: integer, spelling: "220", line: 12, column: 38}
+{kind: ), spelling: ")", line: 12, column: 41}
+{kind: ;, spelling: ";", line: 12, column: 42}
+{kind: eol_comment, spelling: " base line", line: 12, column: 51}
+{kind: identifier, spelling: "do", line: 13, column: 9}
+{kind: identifier, spelling: "Screen", line: 13, column: 12}
+{kind: ., spelling: ".", line: 13, column: 18}
+{kind: identifier, spelling: "drawRectangle", line: 13, column: 19}
+{kind: (, spelling: "(", line: 13, column: 32}
+{kind: integer, spelling: "280", line: 13, column: 33}
+{kind: ,, spelling: ",", line: 13, column: 36}
+{kind: integer, spelling: "90", line: 13, column: 37}
+{kind: ,, spelling: ",", line: 13, column: 39}
+{kind: integer, spelling: "410", line: 13, column: 40}
+{kind: ,, spelling: ",", line: 13, column: 43}
+{kind: integer, spelling: "220", line: 13, column: 44}
+{kind: ), spelling: ")", line: 13, column: 47}
+{kind: ;, spelling: ";", line: 13, column: 48}
+{kind: eol_comment, spelling: " house", line: 13, column: 51}
+{kind: identifier, spelling: "do", line: 15, column: 9}
+{kind: identifier, spelling: "Screen", line: 15, column: 12}
+{kind: ., spelling: ".", line: 15, column: 18}
+{kind: identifier, spelling: "setColor", line: 15, column: 19}
+{kind: (, spelling: "(", line: 15, column: 27}
+{kind: identifier, spelling: "false", line: 15, column: 28}
+{kind: ), spelling: ")", line: 15, column: 33}
+{kind: ;, spelling: ";", line: 15, column: 34}
+{kind: identifier, spelling: "do", line: 16, column: 9}
+{kind: identifier, spelling: "Screen", line: 16, column: 12}
+{kind: ., spelling: ".", line: 16, column: 18}
+{kind: identifier, spelling: "drawRectangle", line: 16, column: 19}
+{kind: (, spelling: "(", line: 16, column: 32}
+{kind: integer, spelling: "350", line: 16, column: 33}
+{kind: ,, spelling: ",", line: 16, column: 36}
+{kind: integer, spelling: "120", line: 16, column: 37}
+{kind: ,, spelling: ",", line: 16, column: 40}
+{kind: integer, spelling: "390", line: 16, column: 41}
+{kind: ,, spelling: ",", line: 16, column: 44}
+{kind: integer, spelling: "219", line: 16, column: 45}
+{kind: ), spelling: ")", line: 16, column: 48}
+{kind: ;, spelling: ";", line: 16, column: 49}
+{kind: eol_comment, spelling: " door", line: 16, column: 51}
+{kind: identifier, spelling: "do", line: 17, column: 9}
+{kind: identifier, spelling: "Screen", line: 17, column: 12}
+{kind: ., spelling: ".", line: 17, column: 18}
+{kind: identifier, spelling: "drawRectangle", line: 17, column: 19}
+{kind: (, spelling: "(", line: 17, column: 32}
+{kind: integer, spelling: "292", line: 17, column: 33}
+{kind: ,, spelling: ",", line: 17, column: 36}
+{kind: integer, spelling: "120", line: 17, column: 37}
+{kind: ,, spelling: ",", line: 17, column: 40}
+{kind: integer, spelling: "332", line: 17, column: 41}
+{kind: ,, spelling: ",", line: 17, column: 44}
+{kind: integer, spelling: "150", line: 17, column: 45}
+{kind: ), spelling: ")", line: 17, column: 48}
+{kind: ;, spelling: ";", line: 17, column: 49}
+{kind: eol_comment, spelling: " window", line: 17, column: 51}
+{kind: identifier, spelling: "do", line: 19, column: 9}
+{kind: identifier, spelling: "Screen", line: 19, column: 12}
+{kind: ., spelling: ".", line: 19, column: 18}
+{kind: identifier, spelling: "setColor", line: 19, column: 19}
+{kind: (, spelling: "(", line: 19, column: 27}
+{kind: identifier, spelling: "true", line: 19, column: 28}
+{kind: ), spelling: ")", line: 19, column: 32}
+{kind: ;, spelling: ";", line: 19, column: 33}
+{kind: identifier, spelling: "do", line: 20, column: 9}
+{kind: identifier, spelling: "Screen", line: 20, column: 12}
+{kind: ., spelling: ".", line: 20, column: 18}
+{kind: identifier, spelling: "drawCircle", line: 20, column: 19}
+{kind: (, spelling: "(", line: 20, column: 29}
+{kind: integer, spelling: "360", line: 20, column: 30}
+{kind: ,, spelling: ",", line: 20, column: 33}
+{kind: integer, spelling: "170", line: 20, column: 34}
+{kind: ,, spelling: ",", line: 20, column: 37}
+{kind: integer, spelling: "3", line: 20, column: 38}
+{kind: ), spelling: ")", line: 20, column: 39}
+{kind: ;, spelling: ";", line: 20, column: 40}
+{kind: eol_comment, spelling: " door handle", line: 20, column: 51}
+{kind: identifier, spelling: "do", line: 21, column: 9}
+{kind: identifier, spelling: "Screen", line: 21, column: 12}
+{kind: ., spelling: ".", line: 21, column: 18}
+{kind: identifier, spelling: "drawLine", line: 21, column: 19}
+{kind: (, spelling: "(", line: 21, column: 27}
+{kind: integer, spelling: "280", line: 21, column: 28}
+{kind: ,, spelling: ",", line: 21, column: 31}
+{kind: integer, spelling: "90", line: 21, column: 32}
+{kind: ,, spelling: ",", line: 21, column: 34}
+{kind: integer, spelling: "345", line: 21, column: 35}
+{kind: ,, spelling: ",", line: 21, column: 38}
+{kind: integer, spelling: "35", line: 21, column: 39}
+{kind: ), spelling: ")", line: 21, column: 41}
+{kind: ;, spelling: ";", line: 21, column: 42}
+{kind: eol_comment, spelling: " roof", line: 21, column: 51}
+{kind: identifier, spelling: "do", line: 22, column: 9}
+{kind: identifier, spelling: "Screen", line: 22, column: 12}
+{kind: ., spelling: ".", line: 22, column: 18}
+{kind: identifier, spelling: "drawLine", line: 22, column: 19}
+{kind: (, spelling: "(", line: 22, column: 27}
+{kind: integer, spelling: "345", line: 22, column: 28}
+{kind: ,, spelling: ",", line: 22, column: 31}
+{kind: integer, spelling: "35", line: 22, column: 32}
+{kind: ,, spelling: ",", line: 22, column: 34}
+{kind: integer, spelling: "410", line: 22, column: 35}
+{kind: ,, spelling: ",", line: 22, column: 38}
+{kind: integer, spelling: "90", line: 22, column: 39}
+{kind: ), spelling: ")", line: 22, column: 41}
+{kind: ;, spelling: ";", line: 22, column: 42}
+{kind: eol_comment, spelling: " roof", line: 22, column: 51}
+{kind: identifier, spelling: "do", line: 24, column: 9}
+{kind: identifier, spelling: "Screen", line: 24, column: 12}
+{kind: ., spelling: ".", line: 24, column: 18}
+{kind: identifier, spelling: "drawCircle", line: 24, column: 19}
+{kind: (, spelling: "(", line: 24, column: 29}
+{kind: integer, spelling: "140", line: 24, column: 30}
+{kind: ,, spelling: ",", line: 24, column: 33}
+{kind: integer, spelling: "60", line: 24, column: 34}
+{kind: ,, spelling: ",", line: 24, column: 36}
+{kind: integer, spelling: "30", line: 24, column: 37}
+{kind: ), spelling: ")", line: 24, column: 39}
+{kind: ;, spelling: ";", line: 24, column: 40}
+{kind: eol_comment, spelling: " sun", line: 24, column: 51}
+{kind: identifier, spelling: "do", line: 25, column: 9}
+{kind: identifier, spelling: "Screen", line: 25, column: 12}
+{kind: ., spelling: ".", line: 25, column: 18}
+{kind: identifier, spelling: "drawLine", line: 25, column: 19}
+{kind: (, spelling: "(", line: 25, column: 27}
+{kind: integer, spelling: "140", line: 25, column: 28}
+{kind: ,, spelling: ",", line: 25, column: 31}
+{kind: integer, spelling: "26", line: 25, column: 32}
+{kind: ,, spelling: ",", line: 25, column: 34}
+{kind: integer, spelling: "140", line: 25, column: 36}
+{kind: ,, spelling: ",", line: 25, column: 39}
+{kind: integer, spelling: "6", line: 25, column: 41}
+{kind: ), spelling: ")", line: 25, column: 42}
+{kind: ;, spelling: ";", line: 25, column: 43}
+{kind: identifier, spelling: "do", line: 26, column: 9}
+{kind: identifier, spelling: "Screen", line: 26, column: 12}
+{kind: ., spelling: ".", line: 26, column: 18}
+{kind: identifier, spelling: "drawLine", line: 26, column: 19}
+{kind: (, spelling: "(", line: 26, column: 27}
+{kind: integer, spelling: "163", line: 26, column: 28}
+{kind: ,, spelling: ",", line: 26, column: 31}
+{kind: integer, spelling: "35", line: 26, column: 32}
+{kind: ,, spelling: ",", line: 26, column: 34}
+{kind: integer, spelling: "178", line: 26, column: 35}
+{kind: ,, spelling: ",", line: 26, column: 38}
+{kind: integer, spelling: "20", line: 26, column: 39}
+{kind: ), spelling: ")", line: 26, column: 41}
+{kind: ;, spelling: ";", line: 26, column: 42}
+{kind: identifier, spelling: "do", line: 27, column: 9}
+{kind: identifier, spelling: "Screen", line: 27, column: 12}
+{kind: ., spelling: ".", line: 27, column: 18}
+{kind: identifier, spelling: "drawLine", line: 27, column: 19}
+{kind: (, spelling: "(", line: 27, column: 27}
+{kind: integer, spelling: "174", line: 27, column: 28}
+{kind: ,, spelling: ",", line: 27, column: 31}
+{kind: integer, spelling: "60", line: 27, column: 32}
+{kind: ,, spelling: ",", line: 27, column: 34}
+{kind: integer, spelling: "194", line: 27, column: 35}
+{kind: ,, spelling: ",", line: 27, column: 38}
+{kind: integer, spelling: "60", line: 27, column: 39}
+{kind: ), spelling: ")", line: 27, column: 41}
+{kind: ;, spelling: ";", line: 27, column: 42}
+{kind: identifier, spelling: "do", line: 28, column: 9}
+{kind: identifier, spelling: "Screen", line: 28, column: 12}
+{kind: ., spelling: ".", line: 28, column: 18}
+{kind: identifier, spelling: "drawLine", line: 28, column: 19}
+{kind: (, spelling: "(", line: 28, column: 27}
+{kind: integer, spelling: "163", line: 28, column: 28}
+{kind: ,, spelling: ",", line: 28, column: 31}
+{kind: integer, spelling: "85", line: 28, column: 32}
+{kind: ,, spelling: ",", line: 28, column: 34}
+{kind: integer, spelling: "178", line: 28, column: 35}
+{kind: ,, spelling: ",", line: 28, column: 38}
+{kind: integer, spelling: "100", line: 28, column: 39}
+{kind: ), spelling: ")", line: 28, column: 42}
+{kind: ;, spelling: ";", line: 28, column: 43}
+{kind: identifier, spelling: "do", line: 29, column: 9}
+{kind: identifier, spelling: "Screen", line: 29, column: 12}
+{kind: ., spelling: ".", line: 29, column: 18}
+{kind: identifier, spelling: "drawLine", line: 29, column: 19}
+{kind: (, spelling: "(", line: 29, column: 27}
+{kind: integer, spelling: "140", line: 29, column: 28}
+{kind: ,, spelling: ",", line: 29, column: 31}
+{kind: integer, spelling: "94", line: 29, column: 32}
+{kind: ,, spelling: ",", line: 29, column: 34}
+{kind: integer, spelling: "140", line: 29, column: 35}
+{kind: ,, spelling: ",", line: 29, column: 38}
+{kind: integer, spelling: "114", line: 29, column: 39}
+{kind: ), spelling: ")", line: 29, column: 42}
+{kind: ;, spelling: ";", line: 29, column: 43}
+{kind: identifier, spelling: "do", line: 30, column: 9}
+{kind: identifier, spelling: "Screen", line: 30, column: 12}
+{kind: ., spelling: ".", line: 30, column: 18}
+{kind: identifier, spelling: "drawLine", line: 30, column: 19}
+{kind: (, spelling: "(", line: 30, column: 27}
+{kind: integer, spelling: "117", line: 30, column: 28}
+{kind: ,, spelling: ",", line: 30, column: 31}
+{kind: integer, spelling: "85", line: 30, column: 32}
+{kind: ,, spelling: ",", line: 30, column: 34}
+{kind: integer, spelling: "102", line: 30, column: 35}
+{kind: ,, spelling: ",", line: 30, column: 38}
+{kind: integer, spelling: "100", line: 30, column: 39}
+{kind: ), spelling: ")", line: 30, column: 42}
+{kind: ;, spelling: ";", line: 30, column: 43}
+{kind: identifier, spelling: "do", line: 31, column: 9}
+{kind: identifier, spelling: "Screen", line: 31, column: 12}
+{kind: ., spelling: ".", line: 31, column: 18}
+{kind: identifier, spelling: "drawLine", line: 31, column: 19}
+{kind: (, spelling: "(", line: 31, column: 27}
+{kind: integer, spelling: "106", line: 31, column: 28}
+{kind: ,, spelling: ",", line: 31, column: 31}
+{kind: integer, spelling: "60", line: 31, column: 32}
+{kind: ,, spelling: ",", line: 31, column: 34}
+{kind: integer, spelling: "86", line: 31, column: 35}
+{kind: ,, spelling: ",", line: 31, column: 37}
+{kind: integer, spelling: "60", line: 31, column: 38}
+{kind: ), spelling: ")", line: 31, column: 40}
+{kind: ;, spelling: ";", line: 31, column: 41}
+{kind: identifier, spelling: "do", line: 32, column: 9}
+{kind: identifier, spelling: "Screen", line: 32, column: 12}
+{kind: ., spelling: ".", line: 32, column: 18}
+{kind: identifier, spelling: "drawLine", line: 32, column: 19}
+{kind: (, spelling: "(", line: 32, column: 27}
+{kind: integer, spelling: "117", line: 32, column: 28}
+{kind: ,, spelling: ",", line: 32, column: 31}
+{kind: integer, spelling: "35", line: 32, column: 32}
+{kind: ,, spelling: ",", line: 32, column: 34}
+{kind: integer, spelling: "102", line: 32, column: 35}
+{kind: ,, spelling: ",", line: 32, column: 38}
+{kind: integer, spelling: "20", line: 32, column: 39}
+{kind: ), spelling: ")", line: 32, column: 41}
+{kind: ;, spelling: ";", line: 32, column: 42}
+{kind: identifier, spelling: "return", line: 34, column: 9}
+{kind: ;, spelling: ";", line: 34, column: 15}
+{kind: }, spelling: "}", line: 35, column: 5}
+{kind: }, spelling: "}", line: 37, column: 1}
+read 263 tokens

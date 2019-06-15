@@ -1,0 +1,41 @@
+
+
+
+
+
+
+class Main {
+
+
+    function void main() {
+        var Array r;                  
+        var Array a, b, c;
+        
+        let r = 8000;
+        
+        let a = Array.new(3);
+        let a[2] = 222;
+        let r[0] = a[2];              
+        
+        let b = Array.new(3);
+        let b[1] = a[2] - 100;
+        let r[1] = b[1];              
+        
+        let c = Array.new(500);
+        let c[499] = a[2] - b[1];
+        let r[2] = c[499];            
+        
+        do a.dispose();
+        do b.dispose();
+        
+        let b = Array.new(3);
+        let b[0] = c[499] - 90;
+        let r[3] = b[0];              
+        
+        do c.dispose();
+        do b.dispose();
+        
+        return;
+    }
+
+}

@@ -1,0 +1,24 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/11/Seven/Main.jack", line: 4, column: 1}
+{kind: adhoc_comment, spelling: "*
+ * Computes the value of 1 + (2 * 3) and prints the result
+ *  at the top-left of the screen.  
+ ", line: 6, column: 1}
+{kind: class, spelling: "class", line: 10, column: 1}
+{kind: identifier, spelling: "Main", line: 10, column: 7}
+{kind: {, spelling: "{", line: 10, column: 12}
+{kind: identifier, spelling: "function", line: 12, column: 4}
+{kind: identifier, spelling: "void", line: 12, column: 13}
+{kind: identifier, spelling: "main", line: 12, column: 18}
+{kind: (, spelling: "(", line: 12, column: 22}
+{kind: ), spelling: ")", line: 12, column: 23}
+{kind: {, spelling: "{", line: 12, column: 25}
+{kind: identifier, spelling: "do", line: 13, column: 8}
+{kind: identifier, spelling: "Output", line: 13, column: 11}
+{kind: ., spelling: ".", line: 13, column: 17}
+{kind: identifier, spelling: "printInt", line: 13, column: 18}
+{kind: (, spelling: "(", line: 13, column: 26}
+{kind: integer, spelling: "1", line: 13, column: 27}
+read 20 tokens

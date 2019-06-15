@@ -1,0 +1,43 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", line: 2, column: 1}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press.", line: 3, column: 1}
+{kind: eol_comment, spelling: " File name: projects/10/ExpressionlessSquare/Square.jack", line: 4, column: 1}
+{kind: eol_comment, spelling: " Expressionless version of Square.jack.", line: 6, column: 1}
+{kind: adhoc_comment, spelling: "*
+ * The Square class implements a graphic square. A graphic square 
+ * has a location on the screen and a size. It also has methods 
+ * for drawing, erasing, moving on the screen, and changing its size.
+ ", line: 8, column: 1}
+{kind: class, spelling: "class", line: 13, column: 1}
+{kind: identifier, spelling: "Square", line: 13, column: 7}
+{kind: {, spelling: "{", line: 13, column: 14}
+{kind: eol_comment, spelling: " Location on the screen", line: 15, column: 5}
+{kind: identifier, spelling: "field", line: 16, column: 5}
+{kind: int, spelling: "int", line: 16, column: 11}
+{kind: identifier, spelling: "x", line: 16, column: 15}
+{kind: ,, spelling: ",", line: 16, column: 16}
+{kind: identifier, spelling: "y", line: 16, column: 18}
+{kind: ;, spelling: ";", line: 16, column: 19}
+{kind: eol_comment, spelling: " The size of the square", line: 18, column: 5}
+{kind: identifier, spelling: "field", line: 19, column: 5}
+{kind: int, spelling: "int", line: 19, column: 11}
+{kind: identifier, spelling: "size", line: 19, column: 15}
+{kind: ;, spelling: ";", line: 19, column: 19}
+{kind: eol_comment, spelling: " Constructs a new square with a given location and size.", line: 21, column: 5}
+{kind: identifier, spelling: "constructor", line: 22, column: 5}
+{kind: identifier, spelling: "Square", line: 22, column: 17}
+{kind: identifier, spelling: "new", line: 22, column: 24}
+{kind: (, spelling: "(", line: 22, column: 27}
+{kind: int, spelling: "int", line: 22, column: 28}
+{kind: identifier, spelling: "Ax", line: 22, column: 32}
+{kind: ,, spelling: ",", line: 22, column: 34}
+{kind: int, spelling: "int", line: 22, column: 36}
+{kind: identifier, spelling: "Ay", line: 22, column: 40}
+{kind: ,, spelling: ",", line: 22, column: 42}
+{kind: int, spelling: "int", line: 22, column: 44}
+{kind: identifier, spelling: "Asize", line: 22, column: 48}
+{kind: ), spelling: ")", line: 22, column: 53}
+{kind: {, spelling: "{", line: 22, column: 55}
+{kind: identifier, spelling: "let", line: 23, column: 9}
+{kind: identifier, spelling: "x", line: 23, column: 13}
+read 38 tokens

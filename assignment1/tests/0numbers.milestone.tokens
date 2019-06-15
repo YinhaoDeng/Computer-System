@@ -1,0 +1,11 @@
+{kind: integer, spelling: "0", line: 1, column: 2}
+{kind: integer, spelling: "4", line: 1, column: 4}
+{kind: integer, spelling: "36", line: 1, column: 6}
+{kind: integer, spelling: "12125", line: 1, column: 9}
+{kind: integer, spelling: "888", line: 1, column: 15}
+{kind: integer, spelling: "34", line: 1, column: 19}
+{kind: integer, spelling: "0", line: 1, column: 22}
+{kind: integer, spelling: "0", line: 1, column: 23}
+{kind: integer, spelling: "0", line: 1, column: 24}
+{kind: integer, spelling: "235", line: 1, column: 26}
+read 10 tokens

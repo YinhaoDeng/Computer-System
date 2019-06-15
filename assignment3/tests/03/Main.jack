@@ -1,0 +1,11 @@
+class Main
+{
+	function void main()
+	{
+		while ( true )
+		{
+		}
+
+		return ;
+	}
+}
