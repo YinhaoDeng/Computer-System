@@ -1,6 +1,9 @@
 # Computer-System
 
-This is just an example which shows my appraoches to the questions. 
-Treat it as a guide but not directly copy and paste.
+language ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-Good luck on your study!
+This repo contains my approches to 3 assginments.
+
+Please use it as a guide, but not directly copy and paste.
+
+Good luck on your Computer System study!
